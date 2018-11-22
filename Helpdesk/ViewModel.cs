@@ -48,7 +48,7 @@ namespace Helpdesk
         //            {
         //                LoginCheck = "Access granted";
         //                Frame currentFrame = Window.Current.Content as Frame;
-        //                currentFrame.Navigate(typeof(BlankPage2));
+        //                currentFrame.Navigate(typeof("Page name"));
         //                break;
         //            }
 
