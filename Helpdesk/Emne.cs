@@ -8,12 +8,12 @@ namespace Helpdesk
 {
     class Emne
     {
-        private string Titel { get; set; }
+        public string Titel { get; set; }
         private string Beskrivelse { get; set; }
         private string Forklaring { get; set; }
-        public string KodeEksempel { get; set; }
+        private string KodeEksempel { get; set; }
         private string Semester { get; set; }
-        private Quizz Quizz { get; set; }
+        private Quiz Quiz { get; set; }
 
         public Emne()
         {

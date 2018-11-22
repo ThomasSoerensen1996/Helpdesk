@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Helpdesk
 {
-    class Quizz
+    class Quiz
     {
         //Q = Question
         //Qa = Question answer
@@ -19,7 +19,7 @@ namespace Helpdesk
         public string Q3 { get; set; }
         public string Qa3 { get; set; }
 
-        public Quizz()
+        public Quiz()
         {
             
         }

@@ -7,8 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.DataContext>
+        <local:ViewModel/>
+    </Page.DataContext>
 
     <Grid>
+        <ListView ItemsSource="{Binding EmneListe, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Titel}"></TextBlock>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
+        <StackPanel Orientation="Vertical">
+
+        </StackPanel>
     </Grid>
 </Page>
