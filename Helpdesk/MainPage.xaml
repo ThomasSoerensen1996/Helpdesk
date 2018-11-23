@@ -15,7 +15,7 @@
         <ListView ItemsSource="{Binding EmneListe, Mode=TwoWay}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding _titel}"></TextBlock>
+                    <TextBlock Text="{Binding Titel}"></TextBlock>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
