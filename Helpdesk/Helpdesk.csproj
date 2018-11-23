@@ -134,6 +134,14 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.7</Version>
     </PackageReference>
+<<<<<<< HEAD
+    <PackageReference Include="MvvmLightLibs">
+      <Version>5.3.0</Version>
+=======
+    <PackageReference Include="System.ObjectModel">
+      <Version>4.3.0</Version>
+>>>>>>> c2eae911a1e4b9e27ddd1c129c889a84eda1f3dc
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
