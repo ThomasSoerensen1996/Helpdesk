@@ -10,21 +10,15 @@
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
-
-<<<<<<< HEAD
     <Grid Width="1100">
-=======
-    <Grid>
         <ListView ItemsSource="{Binding EmneListe, Mode=TwoWay}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding _titel}"></TextBlock>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
->>>>>>> c2eae911a1e4b9e27ddd1c129c889a84eda1f3dc
-        <StackPanel Orientation="Vertical">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding _titel}"></TextBlock>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackPanel Orientation="Vertical">
             <GridView ItemsSource="{Binding EmneListe}" SelectionMode="None" Margin="0">
                 <GridView.ItemTemplate>
                     <DataTemplate>
