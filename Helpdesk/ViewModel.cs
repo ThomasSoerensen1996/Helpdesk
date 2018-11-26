@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -9,10 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight.Command;
 using Helpdesk.Annotations;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Soap;
-using System.Xml;
-using System.Xml.Serialization;
+
 
 namespace Helpdesk
 {
@@ -53,34 +51,9 @@ namespace Helpdesk
         {
 
         }
-        //Save and restore info
-        public void SerializeObject<T>(T serializableObject, string filename)
-        {
-            if (serializableObject == null) { return;}
+  
 
-            try
-            {
-                XmlDocument document = new XmlDocument();
-                XmlSerializer serializer = new XmlSerializer(serializableObject.GetType());
-                using (MemoryStream stream = new MemoryStream())
-                {
-                    serializer.Serialize(stream,serializableObject);
-                    stream.Position = 0;
-                    document.Load(stream);
-                    document.Save(stream);
-                    
-                }
-            }
-            catch (Exception e)
-            {
-                if (e == null)
-                {
-                    //blabla
-                }
-                throw;
-            }   
-            
-        }
+        
         //Navigation til en andet page, via login.
 
         //public void checkLogin()
