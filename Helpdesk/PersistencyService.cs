@@ -20,18 +20,18 @@ namespace Helpdesk
             set { _jsonFileName = value; }
         }
 
-        public static async void SaveNotesAsJsonAsync(ObservableCollection<Note> notes)
+        public static async void SaveNotesAsJsonAsync(ObservableCollection<Emne> notes)
         {
             string notesJsonString = JsonConvert.SerializeObject(notes);
             SerializeNotesFileAsync(notesJsonString, JsonFileName);
         }
 
-        public static async Task<List<Note>> LoadNotesFromJsonAsync()
+        public static async Task<List<Emne>> LoadNotesFromJsonAsync()
         {
             string notesJsonString = await DeserializeNotesFileAsync(JsonFileName);
             if (notesJsonString != null)
             {
-                return (List<Note>) JsonConvert.DeserializeObject(notesJsonString, typeof(List<Note>));
+                return (List<Emne>) JsonConvert.DeserializeObject(notesJsonString, typeof(List<Emne>));
                 return null;
             }
         }
