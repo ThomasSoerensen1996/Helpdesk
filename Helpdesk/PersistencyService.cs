@@ -23,7 +23,7 @@ namespace Helpdesk
         public static async void SaveNotesAsJsonAsync(ObservableCollection<Note> notes)
         {
             string notesJsonString = JsonConvert.SerializeObject(notes);
-            //SerializeNotesFileAsync(notesJsonString, JsonFileName);
+            SerializeNotesFileAsync(notesJsonString, JsonFileName);
         }
 
         public static async Task<List<Note>> LoadNotesFromJsonAsync()
